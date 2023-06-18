@@ -1,0 +1,370 @@
+
+.header {
+    background-image: url(./headerImg.jpg);
+    /* margin-top: -19px;   */
+    color: aliceblue; 
+    text-align: center;
+    background-size: 100%;
+    height: 500px;
+    padding: 1px;
+    vertical-align: middle;
+    /* position: relative; */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Serif', serif;
+    background-color: aliceblue;
+}
+
+.container {
+    /* position: absolute; */
+    margin: 0;
+    padding: 0;
+    margin-top: 120px;
+    
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h1 {
+    margin-top: -1px;
+    font-size: 128px;
+    display: inline;
+    text-shadow: 0 0 10px rgb(238, 125, 4);
+}
+
+.horisontal {
+    height: 40px;
+    background-color: rgb(238, 125, 104);
+    color: aliceblue;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    line-height: 40px;
+    top: 0;
+    text-align: center;
+    font-size: 20px;
+    z-index: 100;
+}
+.theme-switch {
+    flex: 1 0 auto;
+}
+
+.link {
+    flex: 1 0 auto;
+    padding: 0px 100px;
+    cursor: pointer;
+    height: 100%;
+    line-height: 40px;
+}
+
+.link a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+@keyframes hoverAnim {
+    from {background-color:rgb(238, 125, 104)}
+    to {background-color: rgb(169, 92, 93);}
+}
+
+.link:hover {
+    animation-name: hoverAnim;
+    animation-duration: 0.5s;
+    background-color: rgb(169, 92, 93);
+}
+
+.changeThemeDarkButton, .changeThemeLightButton {
+    height: 40px;
+    cursor: pointer;
+}
+
+.changeThemeLightButton {
+    display: none;
+}
+
+info {
+    margin-top: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    left: 10px;
+    box-shadow: 0 0 15px 9px rgba(255,122,0,0.4);
+    display: flex;
+    justify-content: center;
+}
+
+#aboutUs {
+    box-shadow: 0 0 15px 9px rgba(255,122,0,0.4);
+}
+
+.paragraph {
+    width: 700px;
+}
+
+.infoHead {
+    font-size: 28px;
+    color: rgb(169, 92, 93);
+}
+
+.infoBody {
+    color: black;
+}
+
+.aboutUsImg {
+    width: 30%;
+    height: 30%;
+    border-radius: 10%;
+}
+
+.offers {
+    display: flex;
+    line-height: 50px;
+    margin-top: 100px;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-left: 10px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.offer {
+    height: 150px;
+    background-color: rgb(252, 200, 163);
+    border: double 2px rgb(238, 125, 104);
+    border-radius: 50%;
+    top: 0;
+    text-align: center;
+    
+}
+
+.offerImg {
+    margin: 25px;
+    height: 100px;
+}
+.overlay {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(169, 92, 93);
+    top: 2px;
+  }
+
+  .offer:hover .overlay {
+    opacity: 1;
+  }
+.offerText {
+    color: aliceblue;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+.responses{
+    background-image: url(./imgs/responsesBack.jpg);
+    box-shadow: 0 0 15px 9px rgba(255,122,0, 0.4);
+    background-size: 100%;
+    margin-top: 100px;
+    padding: 100px;
+    text-align: center;
+    
+}
+
+.guests {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.response {
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 400px;
+    height: 15rem;
+    background-color: rgb(240, 248, 255, 0.5);
+    position: relative;
+    
+}
+
+.respHeader {
+    color: aliceblue;
+    margin-top: -1px;
+    font-size: 64px;
+    display: inline;
+    text-shadow: 0 0 10px rgb(238, 125, 4);
+}
+
+.guest {
+    display: block;
+    position: absolute;
+    bottom: 1rem;
+    max-height: 11rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+}
+
+.guestComm {
+    max-height: 11rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+}
+
+.footer {
+    margin-top: 100px;
+    background-color: rgb(238, 125, 104);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.medias {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.media {
+    width: 50px;
+    margin-left: 10px;
+}
+
+.contacts {
+    color: rgb(240, 248, 255);
+    position: absolute;
+    left: 10px;
+}
+
+.phone{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 1445px){
+    .guests{
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width: 795px){
+    .offer{
+        width: 100px;
+        height: 100px;
+    }
+    .offerImg{
+        width: 70px;
+        height: 70px;
+        margin: 0;
+        margin-top: 15px;
+    }
+    .overlay{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 545px){
+    .offer{
+        width: 70px;
+        height: 70px;
+    }
+    .offerImg{
+        width: 50px;
+        height: 50px;
+        margin: 0;
+        margin-top: 15px;
+    }
+    .overlay{
+        width: 70px;
+        height: 70px;
+    }
+    .offerText{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 395px){
+    .offer{
+        width: 50px;
+        height: 50px;
+    }
+    .offerImg{
+        width: 30px;
+        height: 30px;
+        margin: 0;
+        margin-top: 15px;
+    }
+    .overlay{
+        width: 50px;
+        height: 50px;
+    }
+    .offerText{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    info{
+        justify-content: center;
+        text-align: center;
+        background-image: url(./imgs/infoBack.jpeg);
+        background-size: 100%;
+    }
+    .aboutUsImg{
+        display: none;
+    }
+    .paragraph{
+        color: black !important;
+        background-color: rgb(240, 248, 255, 0.4);
+    }
+}
+
+@media screen and (max-width: 500px){
+    .footer {
+        display: block;
+        height: 150px;
+    }
+    .medias{
+        position: static;
+    }
+    .contacts{
+        position: static;
+    }
+}
+
+@media screen and (max-width: 835px){
+    h1{
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 910px){
+    .horisontal{
+        display: none;
+    }
+    .mobileNav{
+        display: block;
+    }
+}
